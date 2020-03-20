@@ -1,0 +1,38 @@
+<html>
+<body onload = "repeat()">
+
+<h4>Displaying images using time interval.</h4>
+
+
+
+
+ <img src="emojis/4.png" id = "change" alt="Smiley face" height="100" width="100"> 
+
+
+<script>
+function repeat(){
+setInterval(myFunction, 1000);
+}
+
+function myFunction() {
+var pic = [
+"emojis/1.png",
+"emojis/2.png",
+"emojis/3.png",
+"emojis/4.png",
+"emojis/5.png",
+"emojis/6.png",
+"emojis/7.jpg",
+"emojis/8.jpg",
+"emojis/9.jpg",
+"emojis/10.png",
+];
+  var x = Math.floor((Math.random() * 10) + 1);
+
+  document.getElementById("change").src = pic[x];
+}
+</script>
+
+</body>
+</html>
+
