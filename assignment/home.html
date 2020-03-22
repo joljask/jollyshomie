@@ -1,0 +1,218 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>JOLLY's Game Shop</title>
+        <link rel = "stylesheet" href = "header.css">
+        <h1 style="text-align: center;
+        background-color: rgb(51, 43, 43);
+        color: rgb(207, 207, 207);
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin: -8px;"
+        ><b>JoLlY's Game Shop</b></h1>
+        <div class="home">
+            <a href="home.html">HOME</a>
+        </div>
+        
+        <div class="about">
+            <a href="about.html">ABOUT</a>
+        </div>
+            
+        <div class="location">
+            <a href="location.html">LOCATION</a> 
+        </div>
+        <div class="current">
+            <a href="current.html">ON SALE</a>
+
+        </div>
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              
+              <img src="game/cod.jpg" style="width:100%;">
+              <div class="text">Free of cost</div>
+            </div>
+            
+            <div class="mySlides fade">
+              
+              <img src="game/doom.jpg" style="width:100%">
+              <div class="text">Rs.3,999/-</div>
+            </div>
+            
+            <div class="mySlides fade">
+              
+              <img src="game/fortnite.jpg" style="width:100%">
+              <div class="text">Free of Cost</div>
+            
+            </div>
+            
+            <div style="text-align:center">
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+            </div>  
+        
+        <style>
+
+.mySlides {display: none;}
+img {vertical-align: middle;height: 600px;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 70%;
+  width: 100%;
+  position: static ;
+  margin-top: 60px;
+  margin-left: 15%;
+  background-color: rgb(48, 42, 42);
+}
+
+
+
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  background-color: black;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: static;
+  bottom: 18px;
+  width: auto;
+  text-align: center;
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+
+  cursor: pointer;
+  
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+@media only screen and (max-width: 360px) {
+  img {
+    height: 200px;
+  }
+}
+@media only screen and (max-width: 1218px) {
+  img {
+    height: 500px;
+  }
+}
+@media only screen and (max-width: 980px) {
+  img {
+    height: 430px;
+  }
+}
+@media only screen and (max-width: 664px) {
+  img {
+    height: 350px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  img {
+    height: 250px;
+  }
+}
+@media only screen and (max-width: 414px) {
+  img {
+    height: 270px;
+  }
+}
+        </style>
+        
+    </head>
+
+    <body>
+        
+        
+        
+      <div class="gameList"> 
+        
+        <div class="game1">
+            <a href="https://store.steampowered.com/app/730/CounterStrike_Global_Offensive/"><img src="images/csgo.jpg" alt="Counter Strike Global Offensive "><br><p><b>CSGO <br>price:</b> free</p></a>
+
+        </div>
+
+        <div class="game1">
+            <a href="https://www.epicgames.com/fortnite/en-US/home"><img src="images/fortnite.jpg" alt="Fortnite"><br><p><b>Fortnite <br>price:</b> free</p></a>
+        </div>
+
+        <div class="game1">
+            <a href="https://store.steampowered.com/app/460930/Tom_Clancys_Ghost_Recon_Wildlands/"><img src="images/tom.jpg" alt="Tom Clancy's Ghost Recon Wildlands"><br><p><b>Tom Clancy's<br>price: </b> Rs.2,999/-</p></a>
+        </div>
+
+        <div class="game1">
+            <a href="https://store.steampowered.com/app/782330/DOOM_Eternal/"><img src="images/doom.jpg" alt=" DOOM Eternal"><br><p><b>  DOOM Eternal <br>price:</b> Rs.3,999/-</p></a>
+        </div>
+       </div>   
+        
+       <div class="gameList">
+        <div class="game1">
+            <a href="https://store.steampowered.com/app/782330/DOOM_Eternal/"><img src="images/cod.jpg" alt="Cod WarZone"><br><p><b> COD WarZone<br>price:</b> free</p></a>
+        </div>
+
+       </div>
+
+        <script>
+            var slideIndex = 0;
+            showSlides();
+            
+        
+        
+            function showSlides() {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) {slideIndex = 1}    
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+              setTimeout(showSlides, 2000); // Change image every 2 seconds
+            }
+            </script>
+        
+        
+    </body>
+</html>
