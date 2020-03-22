@@ -88,6 +88,11 @@ marquee h1:hover{
         margin-left: 25px;
     }
 }
+@media screen and (max-width:404px){
+    .game1 a img{
+        margin-left: 25px;
+    }
+}
 
 
 @media screen and (max-width:620px){
