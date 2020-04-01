@@ -1,0 +1,37 @@
+*{
+    background-color: rgb(73, 165, 218);
+    color: white;
+    
+}
+h1{
+    text-align: center;
+    width: auto;
+    background-color: rgb(49, 170, 170);
+    padding-top: 5px;
+    margin-top: -10px;
+    padding-bottom: 10px;
+}
+.content{
+    margin-left: 10%;
+    
+}
+
+.inside{
+   
+    color: whitesmoke;
+    border-radius: 20px;
+}
+.inside label{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.button{
+    background-color: rgb(245, 152, 30);
+    height: 50px;
+    width: 150px;
+    color: crimson;
+    font-variant: small-caps;
+    font-size: large;
+    border-radius: 20px;
+    font-weight: bold;
+}
